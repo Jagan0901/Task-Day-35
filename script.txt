@@ -1,0 +1,36 @@
+1.CREATING TABLE AS 'MOVIE':
+
+
+CREATE TABLE MOVIE (
+    movieId INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    releaseYear INTEGER NOT NULL,
+    cast varchar(64),
+    genre varchar(64),
+    reviews varchar(64),
+    image TEXT NOT NULL,
+    trailer TEXT NOT NULL
+    
+  );
+
+
+2. INSERTING MOVIE COLUMN VALUES :
+
+  INSERT INTO MOVIE VALUES (0001, 'PS-1', 2022, 
+"['Vikram', 'Karthi', 'Aiswarya Bachan', 'Jayam Ravi', 'Trisha']",
+"['Action', 'Adventure', 'Drama']",
+"[7, 10, 6.6]",
+"https://www.imdb.com/title/tt10701074/mediaviewer/rm1604125185/?ref_=tt_ov_i",
+"https://www.youtube.com/embed/D4qAQYlgZQs");
+
+INSERT INTO MOVIE VALUES (0002, 'PS-2', 2023, 
+"['Vikram', 'Karthi', 'Aiswarya Bachan', 'Jayam Ravi', 'Trisha']",
+"['Action', 'Adventure', 'Drama']",
+"[9, 10, 9]",
+"https://www.imdb.com/title/tt10701074/mediaviewer/rm1604125185/?ref_=tt_ov_i",
+"https://www.youtube.com/embed/D4qAQYlgZQs");
+
+
+
+3. TO GET DATA FROM TABLE :
+   SELECT * FROM MOVIE    //Based on condition we can fetch data
